@@ -2,7 +2,7 @@
 node_modules
 
 # Folders
-public
+public/js
 dist
 
 # IDE's
