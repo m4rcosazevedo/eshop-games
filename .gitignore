@@ -1,6 +1,12 @@
 # Dependency directories
 node_modules
 
-#IDE's
+# Folders
+public
+dist
+
+# IDE's
 .vscode
 .idea
+
+# Files
