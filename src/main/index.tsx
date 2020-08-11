@@ -1,12 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import '@/presentation/styles/global.scss'
-
-const App: React.FC = () => {
-  return <p>Oi</p>
-}
+import { Routes } from '@/presentation/components'
 
 ReactDOM.render(
-  <App/>,
+  <Routes />,
   document.getElementById('main')
 )
