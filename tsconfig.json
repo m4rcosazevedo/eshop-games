@@ -21,7 +21,8 @@
     "resolveJsonModule": true
   },
   "include": [
-    "src"
+    "src",
+    "src/main/config/*.d.ts"
   ],
   "exclude": [
     "node_modules"

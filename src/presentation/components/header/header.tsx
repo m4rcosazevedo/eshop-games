@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Header: React.FC = () => {
-  return (
-    <>Header</>
-  )
+  return null
 }
 
 export default Header
