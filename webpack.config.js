@@ -23,6 +23,17 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            }
+          }
+        ]
+      },
+      {
         test: /\.scss$/,
         use: [
           { loader: 'style-loader' },
