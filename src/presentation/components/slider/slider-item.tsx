@@ -6,7 +6,7 @@ import {
 } from '@/presentation/components/slider/slide-item-styles'
 import { Arrow, Button, Like } from '@/presentation/components'
 
-type Props = {
+interface Props {
   content: SliderProps
 }
 
@@ -38,7 +38,7 @@ const SliderItem: React.FC<Props> = ({ content }: Props) => {
               <Button type="button">Comprar R$ {content.price.toString().replace('.', ',')}</Button>
             </Column>
             <Column larger={2.5}>
-              <h3>Lançamento {content.coming.toLocaleDateString('pt', {
+              <h3>Lançamento {new Date(content.coming).toLocaleDateString('pt', {
                 day: 'numeric', month: 'short', year: 'numeric'
               }).replace(/ de /g, ' ').replace('.', '')}</h3>
             </Column>
