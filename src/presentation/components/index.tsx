@@ -1,5 +1,8 @@
+export { default as Arrow } from './arrow/arrow'
 export { default as Base } from './base/base'
+export { default as Button } from './button/button'
 export { default as Footer } from './footer/footer'
 export { default as Header } from './header/header'
+export { default as Like } from './like/like'
 export { default as Routes } from './routes/routes'
 export { default as Slider } from './slider/slider'

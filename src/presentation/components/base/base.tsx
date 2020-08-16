@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Footer, Header } from '@/presentation/components'
 
-type Props = React.HTMLAttributes<HTMLDivElement>
+type Props = {
+  children?: ReactNode
+}
 
-const Base: React.FC<Props> = (props: Props) => {
+const Base: React.FC<Props> = ({ children }: Props) => {
   return (
     <>
       <Header />
-      {props.children}
+      {children}
       <Footer />
     </>
   )
