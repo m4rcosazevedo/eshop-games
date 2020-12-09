@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { SliderProps } from '@/presentation/components/slider/slider'
 import {
   Cover, LogoWrap, Logo, Item, ArrowWrap, MetaInfo, Row, Column, Space, IndicatedFor,
   ArrowWrapCenter, ClosedInfo, Description, PrincipalInformation
 } from '@/presentation/components/slider/slide-item-styles'
 import { Arrow, Button, Like } from '@/presentation/components'
+import { ContentItemModel } from '@/models/content-item'
 
 interface Props {
-  content: SliderProps
+  content: ContentItemModel
 }
 
 const SliderItem: React.FC<Props> = ({ content }: Props) => {

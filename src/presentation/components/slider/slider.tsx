@@ -2,23 +2,11 @@ import React, { useEffect, useState } from 'react'
 import SliderItem from '@/presentation/components/slider/slider-item'
 import { Items, Wrap } from '@/presentation/components/slider/slider-styles'
 import { api } from '@/infra/http/axios-client'
-
-export interface SliderProps {
-  id: number
-  title: string
-  image: string
-  logo: string
-  price: number
-  coming: Date
-  indicatedFor: string
-  indicatedImage: string
-  extras: string
-  description: string
-}
+import { ContentItemModel } from '@/models/content-item'
 
 const Slider: React.FC = () => {
   const [error, setError] = useState<string>('')
-  const [contents, setContents] = useState<SliderProps[]>([])
+  const [contents, setContents] = useState<ContentItemModel[]>([])
 
   useEffect(() => {
     api.get('/slider?limit=4').then((response) => {

@@ -6,3 +6,10 @@ dist
 *.scss
 *.svg
 *.json
+.next
+/*.js
+*.png
+*.jpg
+*.css
+*.sass
+/src/assets
