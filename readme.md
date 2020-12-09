@@ -1,3 +1,8 @@
+#E-Shop Home
+Project focused on the frontend of an e-commerce page
+
+![](demo.jpg)
+
 ####init project
 `yarn start`
 
